@@ -77,7 +77,7 @@
 		</style>
 		
 	</head>   
-	<body> 
+	<body onclick="playAudio()"> 
 	<br>
 	
 		<div align="center">
@@ -156,6 +156,14 @@
 <center><pre><b> </b><marquee align="center" direction="left" scrollamount="12" width="700"><font face="Courier New" size="12" font style="text-shadow: 0px 0px 0px lime;" color="Orange">WE ARE INDIANS | WE ARE LEGIONS !!</marquee><b> </b></center><br>
 </div>
 <style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer"></div>
-	<iframe src="https://d.top4top.io/m_1779wgri51.mp3" width="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" ></iframe>
-	</body>
+<audio id="audio" src="https://d.top4top.io/m_1779wgri51.mp3" hidden autoplay></audio>
+<script>
+const playAudio =  () =>{
+        var audio = document.querySelector("#audio");
+        if (audio.paused) {
+            audio.play();
+        }
+}
+</script>	
+</body>
 </html>
